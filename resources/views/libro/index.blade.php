@@ -37,10 +37,10 @@
                                         <th>No</th>
                                         
 										<th>Nombre</th>
-										<th>Tamanio</th>
-										<th>Cant Pag</th>
+										<th>Tamaño</th>
+										<th>Cantidad Paginas</th>
 										<th>Pecio</th>
-										<th>Fecha Public</th>
+										<th>Fecha Publicacion</th>
 
                                         <th></th>
                                     </tr>
@@ -58,11 +58,11 @@
 
                                             <td>
                                                 <form action="{{ route('libros.destroy',$libro->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('libros.show',$libro->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('libros.edit',$libro->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('libros.show',$libro->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('libros.edit',$libro->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Editar') }}</a>
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
+                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Eliminar') }}</button>
                                                 </form>
                                             </td>
                                         </tr>

@@ -11,10 +11,10 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Show Libro</span>
+                            <span class="card-title">{{ __('Show') }} Libro</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('libros.index') }}"> Back</a>
+                            <a class="btn btn-primary" href="{{ route('libros.index') }}">{{ __('Back') }}</a>
                         </div>
                     </div>
 
@@ -25,11 +25,11 @@
                             {{ $libro->nombre }}
                         </div>
                         <div class="form-group">
-                            <strong>Tamanio:</strong>
+                            <strong>Tamaño:</strong>
                             {{ $libro->tamanio }}
                         </div>
                         <div class="form-group">
-                            <strong>Cant Pag:</strong>
+                            <strong>Cantidad Paginas:</strong>
                             {{ $libro->cant_pag }}
                         </div>
                         <div class="form-group">
@@ -37,7 +37,7 @@
                             {{ $libro->pecio }}
                         </div>
                         <div class="form-group">
-                            <strong>Fecha Public:</strong>
+                            <strong>Fecha Publicacion:</strong>
                             {{ $libro->fecha_public }}
                         </div>
 
