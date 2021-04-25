@@ -1,0 +1,49 @@
+@extends('layouts.app')
+
+@section('template_title')
+    {{ $libro->name ?? 'Show Libro' }}
+@endsection
+
+@section('content')
+    <section class="content container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="float-left">
+                            <span class="card-title">Show Libro</span>
+                        </div>
+                        <div class="float-right">
+                            <a class="btn btn-primary" href="{{ route('libros.index') }}"> Back</a>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        
+                        <div class="form-group">
+                            <strong>Nombre:</strong>
+                            {{ $libro->nombre }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Tamanio:</strong>
+                            {{ $libro->tamanio }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Cant Pag:</strong>
+                            {{ $libro->cant_pag }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Pecio:</strong>
+                            {{ $libro->pecio }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Fecha Public:</strong>
+                            {{ $libro->fecha_public }}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+@endsection
