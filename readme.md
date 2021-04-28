@@ -6,6 +6,12 @@ ampliar  sus  productos mediante el usuario y contraseña.
 
 Al ingresar al págian tiene que ingresar su usuario contraseña para solicitar un permiso de acceso, cuando se ingresa nos aparace libros donde podemos ver, editar, eliminar y crear un nuevo libro. Cunado creamos un  libro nos aparecen los datos que tenemos que llenar ya nos va aparecer en nuestra lista, si desemos eliminar un registro de nuestra libreria tambien aparece la opción de eliminar el registro.
 
+## Tecnología utilizada 
+
+Laravel es un framework PHP. Es uno de los frameworks más utilizados y de mayor comunidad en el mundo de Internet.
+
+Como framework resulta bastante moderno y ofrece muchas utilidades potentes a los desarrolladores, que permiten agilizar el desarrollo de las aplicaciones web.
+
 ## USUARIO CONTRASEÑA
 
 USUARIO: lorenacardona1995@gmail.com
